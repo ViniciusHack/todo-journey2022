@@ -1,0 +1,25 @@
+.taskListContainer header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskListContainer header h3 {
+  color: var(--blue-500);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.taskListContainer header h3:last-of-type {
+  color: var(--purple-500);
+}
+
+.taskListContainer header h3 span {
+  padding: 0.125rem .5rem;
+  margin-left: .5rem;
+
+  font-size: .75rem;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 1rem;
+}
