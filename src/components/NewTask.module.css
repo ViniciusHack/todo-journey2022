@@ -1,0 +1,40 @@
+.newTaskContainer {
+  display: grid;
+  width: 100%;
+  gap: .5rem;
+  grid-template-columns: 1fr 5.625rem;
+}
+
+.newTaskContainer input {
+  background: var(--gray-500);
+  outline: none;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+
+  color: var(--gray-100);
+}
+
+.newTaskContainer input:focus {
+  border: 1px solid var(--purple-700);
+}
+
+.newTaskContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  
+  background: var(--blue-700);
+  border-radius: 8px;
+  /* padding: 1rem; */
+  border: 0;
+  outline: none;
+
+  color: var(--gray-100);
+  transition: 0.1s;
+}
+
+.newTaskContainer button:hover {
+  background: var(--blue-500);
+}
