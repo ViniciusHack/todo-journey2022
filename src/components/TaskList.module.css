@@ -1,6 +1,8 @@
 .taskListContainer header {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 1.5rem;
 }
 
 .taskListContainer header h3 {
@@ -22,4 +24,9 @@
   background: var(--gray-400);
   color: var(--gray-200);
   border-radius: 1rem;
+}
+
+.taskItemGroup {
+  display: grid;
+  gap: .75rem;
 }

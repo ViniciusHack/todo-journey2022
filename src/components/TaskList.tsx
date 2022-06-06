@@ -1,4 +1,5 @@
 
+import { TaskItem } from './TaskItem';
 import styles from './TaskList.module.css';
 
 export function TaskList() {
@@ -8,6 +9,12 @@ export function TaskList() {
         <h3>Tarefas criadas <span>5</span></h3>
         <h3>Concluídas <span>2 de 5</span></h3>
       </header>
+
+      <section className={styles.taskItemGroup}>
+        <TaskItem />
+        <TaskItem />
+        <TaskItem />
+      </section>
     </section>
   )
 }
