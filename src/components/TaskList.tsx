@@ -1,8 +1,14 @@
 
+import { Task } from '../App';
 import { TaskItem } from './TaskItem';
 import styles from './TaskList.module.css';
 
-export function TaskList() {
+interface TaskListProps {
+  tasks: Task[]
+}
+
+export function TaskList({ tasks }: TaskListProps) {
+
   return (
     <section className={styles.taskListContainer}>
       <header>
@@ -11,7 +17,9 @@ export function TaskList() {
       </header>
 
       <section className={styles.taskItemGroup}>
-        <TaskItem />
+        {tasks.map(task => (
+          <TaskItem key={task.id}/>
+        ))}
         <TaskItem />
         <TaskItem />
       </section>
