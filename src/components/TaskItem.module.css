@@ -1,6 +1,8 @@
 .taskItemContainer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  
   gap: .75rem;
 
   padding: 1rem;
@@ -15,6 +17,7 @@
 .taskInfo {
   display: flex;
   gap: .75rem;
+  align-items: flex-start;
 }
 
 .taskInfo p {
@@ -36,10 +39,10 @@
   color: var(--danger);
 }
 
-.taskItemContainer .checkButton {
+.taskItemContainer button.buttonUnChecked {
   color: var(--blue-500);
 }
 
-.taskItemContainer.checked {
+.taskItemContainer button.buttonChecked {
   color: var(--purple-500);
 }

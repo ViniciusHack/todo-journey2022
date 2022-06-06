@@ -14,17 +14,20 @@ export function TaskItem({ title, onRemove, id, completed, onCheck }: TaskItemPr
     <div className={styles.taskItemContainer}>
       <div className={styles.taskInfo}>
       <button 
-      className={ completed ? styles.checked + styles.checkButton : styles.checkButton} 
-      onClick={() => onCheck(id)} 
-      title="Marcar tarefa como concluída"
+        className={ completed ? styles.buttonChecked :  styles.buttonUnChecked} 
+        onClick={() => onCheck(id)} 
+        title="Marcar tarefa como concluída"
       >
-        <CheckCircle weight={completed ? 'fill' : 'regular'} />
+        <CheckCircle 
+          size={24} 
+          weight={completed ? 'fill' : 'regular'} 
+        />
       </button>
         <p>{title}</p>
       </div>
 
       <button onClick={() => onRemove(id)} title="Excluir tarefa">
-        <Trash  />
+        <Trash size={24}/>
       </button>
     </div>
   )
