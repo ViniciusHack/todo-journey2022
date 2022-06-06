@@ -16,6 +16,8 @@ export function NewTask({ onAdd }: NewTaskProps) {
   const handleSubmitNewTask = (e: FormEvent) => {
     e.preventDefault();
     onAdd(newTaskName);
+
+    setNewTaskName('');
   }
 
   return (

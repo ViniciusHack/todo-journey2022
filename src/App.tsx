@@ -16,7 +16,7 @@ export function App() {
 
   const addNewTask = useCallback((title: string) => {
     const newTask = {
-      id: Math.floor(Math.random() * 1000) + 1,
+      id: Date.now(),
       title,
       checked: false,
     }

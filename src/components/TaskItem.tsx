@@ -1,12 +1,16 @@
 import { Check, Trash } from 'phosphor-react';
 import styles from './TaskItem.module.css';
 
-export function TaskItem() {
+interface TaskItemProps {
+  title: string;
+}
+
+export function TaskItem({ title }: TaskItemProps) {
   return (
     <div className={styles.taskItemContainer}>
       <div className={styles.taskInfo}>
         <Check />
-        <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+        <p>{title}</p>
       </div>
 
       <Trash />

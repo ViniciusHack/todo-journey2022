@@ -18,10 +18,8 @@ export function TaskList({ tasks }: TaskListProps) {
 
       <section className={styles.taskItemGroup}>
         {tasks.map(task => (
-          <TaskItem key={task.id}/>
+          <TaskItem key={task.id} {...task}/>
         ))}
-        <TaskItem />
-        <TaskItem />
       </section>
     </section>
   )
