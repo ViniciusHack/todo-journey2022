@@ -6,3 +6,27 @@
   padding: 0 .5rem;
   margin-top: -27px;
 }
+
+.emptyState {
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  padding-top: 4rem;
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.emptyState p {
+  font-weight: 700;
+}
+
+.emptyState p span {
+  display: block;
+  font-weight: 400;
+}
+
+.emptyState img {
+  margin-bottom: 1rem;
+}
