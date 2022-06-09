@@ -23,6 +23,7 @@
 .taskInfo p {
   color: var(--gray-100);
   font-size: 0.875rem;
+  word-break: break-all;
 }
 
 .taskItemContainer button {
@@ -36,13 +37,39 @@
 
 .taskItemContainer button:last-child:hover {
   background: var(--gray-400);
-  color: var(--danger);
 }
 
-.taskItemContainer button.buttonUnChecked {
-  color: var(--blue-500);
+.taskItemContainer button:last-child:hover path {
+  fill: var(--danger);
 }
 
-.taskItemContainer button.buttonChecked {
-  color: var(--purple-500);
+.taskItemContainer button.buttonUnChecked:hover path{
+  fill: var(--blue-700);
+}
+
+.taskItemContainer button.buttonChecked:hover path {
+  fill: var(--purple-500);
+}
+
+.taskItemContainer button.buttonChecked:hover path:last-of-type {
+  fill: var(--gray-100);
+}
+
+.circleContainer {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.circle {
+  width: 17.45px;
+  height: 17.45px;
+  border-radius: 100%;
+  border: 1.3px solid var(--blue-500);
+  transition: 0.1s;
+}
+
+.circleContainer:hover .circle{
+  background-color: rgba(30, 111, 159, 0.2) ;
 }

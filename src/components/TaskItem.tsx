@@ -1,5 +1,8 @@
-import { CheckCircle, Trash } from 'phosphor-react';
+import { ReactComponent as Check } from '../assets/check.svg';
+import { ReactComponent as Trash } from '../assets/trash.svg';
 import styles from './TaskItem.module.css';
+
+
 
 interface TaskItemProps {
   title: string;
@@ -13,21 +16,23 @@ export function TaskItem({ title, onRemove, id, completed, onCheck }: TaskItemPr
   return (
     <div className={styles.taskItemContainer}>
       <div className={styles.taskInfo}>
+        {console.log(completed)}
       <button 
         className={ completed ? styles.buttonChecked :  styles.buttonUnChecked} 
         onClick={() => onCheck(id)} 
         title="Marcar tarefa como concluída"
       >
-        <CheckCircle 
-          size={24} 
-          weight={completed ? 'fill' : 'regular'} 
-        />
+        {completed ?
+        <Check />
+        :
+        <div className={styles.circleContainer}><div className={styles.circle} /></div>
+        }
       </button>
         <p>{title}</p>
       </div>
 
       <button onClick={() => onRemove(id)} title="Excluir tarefa">
-        <Trash size={24}/>
+        <Trash />
       </button>
     </div>
   )

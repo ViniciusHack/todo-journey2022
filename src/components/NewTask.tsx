@@ -1,5 +1,5 @@
-import { PlusCircle } from 'phosphor-react';
 import { ChangeEvent, FormEvent, useState } from 'react';
+import plusSrc from '../assets/plus.svg';
 import styles from './NewTask.module.css';
 
 interface NewTaskProps {
@@ -30,7 +30,7 @@ export function NewTask({ onAdd }: NewTaskProps) {
       />
       <button type="submit">
         Criar
-        <PlusCircle size={16} />
+        <img src={plusSrc} />
       </button>
     </form>
   )
