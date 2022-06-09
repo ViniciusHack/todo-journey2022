@@ -32,17 +32,22 @@
 <a href="https://todo-journey2022.vercel.app/">**todo**</a> is a web task list in the to-do style and the first challenge from Ignite ReactJS Journey2022.
 
 
+![delete](https://user-images.githubusercontent.com/60555584/172963533-343dfcb2-3a9c-4084-b80a-32923fc9f55e.gif)
+
+
 ## 🔨 Features
 - Task creating
 - Task listing
 - Check a task
 - Task deletion
 
+
 ##  💻 Getting started
 ### Requirements
 
 - <a href="https://nodejs.org/en/">NodeJS</a>
 - <a href="https://classic.yarnpkg.com/lang/en/docs/install/">yarn</a> (optional)
+
 
 **Follow the steps below**
 ```bash
@@ -59,6 +64,7 @@ $ npm run dev
 # or
 $ yarn dev
 ```
+
 
 ## 🔧 Technologies
 - Typescript
