@@ -16,7 +16,6 @@ export function TaskItem({ title, onRemove, id, completed, onCheck }: TaskItemPr
   return (
     <div className={styles.taskItemContainer}>
       <div className={styles.taskInfo}>
-        {console.log(completed)}
       <button 
         className={ completed ? styles.buttonChecked :  styles.buttonUnChecked} 
         onClick={() => onCheck(id)} 
@@ -28,7 +27,7 @@ export function TaskItem({ title, onRemove, id, completed, onCheck }: TaskItemPr
         <div className={styles.circleContainer}><div className={styles.circle} /></div>
         }
       </button>
-        <p>{title}</p>
+        <p className={completed ? styles.taskCompleted : ''}>{title}</p>
       </div>
 
       <button onClick={() => onRemove(id)} title="Excluir tarefa">

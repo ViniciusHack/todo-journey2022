@@ -26,6 +26,11 @@
   word-break: break-all;
 }
 
+.taskInfo p.taskCompleted {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
 .taskItemContainer button {
   line-height: .875rem;
   background-color: transparent;
